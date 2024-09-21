@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "nemea-crisis",
+  "private_key_id": "55df529beb79d3d109cb5f96d7fe26d6e20839c8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDmGWLrdRe0RUjz\nmpFOlAd8AA9eMRnYJMBf2tnjfSz0R3KgkoWacTchN9TvAP1GZwTr0ONLOvRW3+9w\nwY2C0gN7DD88ARMxT9I2OVv2tU7SNn9DGowfCA56JbSnGUyQVIoBWSggy+Q7rvRO\nYK3nRTIerpHhg/soqRXov0xVz6MpR1EzPlP8YWWvTmd7FyQfWO60Jqmm2Ny51425\nprIDwlNt9jqV/1haaDBJuGr96NUmv4DilW5MkrA31iyWUKww1YNe/zQCUkclubvN\nuOSyOdvUOw4Gv7yABAfqE2jZqYSd1j/iiK9EwIXotysQkbHxZ7nKky6M7xxfC5A1\n0K1MWth7AgMBAAECggEAMETbD3G8y0BNkWy3VriO6WBJ2QSL21+6S2Fpm+NCbuwe\nC7kw9bkSS5GexZR7jS1HRwDG7Z0sbJ0Faa3wtaTAvitPiJLhJ9MK0f0uYY6fPlHY\nWIdVJZ1XDCCkyPjxqsVRPf8p/9dFxY9qCJcXZBCL9wu/5oL9SQZPZkfbB5VLMPkz\nHEQuf5w7a+c2eeFWyj8+jmS+QLNwkBavqlH6RJ4sA5z58Uepxz4MSypo5bRBEEfN\n2YFm6sq4ODhkjrcI6zVvFXHpocteINBZYpLEvouvEgJLtwAcOPRyLYXxSpQpVxBP\nNi+WswgJagcOv4Gu19mp5bL7nvJApfQ6J3TYm/2CYQKBgQD58uL7IvJJs8vjR8To\nrRC0WDpcVlZ9pWHgpQFDBvUyvaaA1lM3EgMhKGCx9886swnb8RE++NQya+KlXcL1\ng7b8PwmdBqxTBcLn4gOUIryduG9GuqmlNQ+stwig7EdNYzpG8uPbBWrooMx1z0mi\n5sf2eMthZBeHVT/0sLszbpmTfwKBgQDrq3o0zZ1hslFjLxQ/2UFJOax1IuTQrRcp\nOdt/Zmkosx+Uiha7yDY3s4DpNmscfYZ04IxLs6YBNJbbLjU74rQfY96qgM5mTgX7\nRKOGnHD/SZP1Tc175na3+B+VfgDxFHFmYWcQ1AbzkaWSpZpRwA58y56DT3bV6Nt4\ncamMUpSJBQKBgBpGDtgJR2C59p+whqFSt+PNNm1IYhUZEl3T2nsaOyIXT25RmTO7\nv/p3TRrICs+HzGyDPaXZ8CxQrOVnIrw+GTkQw0jvT6P2ghNv7aJfuGX34jKUIosM\nNdaY8t4/mAspeBHHLG50dlV3uaZUoM/v5GsjLXXSWKrQKkXlYfg5EwmvAoGBANhV\nkNjn5pDIH+3sSapSxJtzVdwxK9pjCd/OPK+2UtIJm/O+zx+RqjN3k96BFdIRaFvh\nxOe5AaoZnGGXCUbv1Gj8RGo/0zgWZ2dAmtv2v8OYxzlnMjmKVXCLVHLmN/cVzQMu\nZm4MNFViXZtAaWih5KqqP9hKGcxC9TSbIgitxawBAoGBAKQYBwPgOlnEZdRo9PdT\nTqBkJDAdyDnSBSl/W/+m9NzPCXBznYtZekJt95JYqL1gpmfrtpPOcFa0pJN3O8di\n9+NS8Gzek1iZqCZfd1MXzw+WBrjSzKV2zs0VVKTa5ty5wS6Z3CKE1qwLKUNY7SFO\ngtXJEd4EBSCmQalVJQjrK8qc\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-6axlx@nemea-crisis.iam.gserviceaccount.com",
+  "client_id": "116919148373719231144",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-6axlx%40nemea-crisis.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,151 @@
+name: nemea
+description: "A new Flutter project."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.5 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.6
+
+  # Icons
+  flutter_launcher_icons: ^0.13.1
+
+  # Launch Phone Call
+  url_launcher: ^6.3.0
+
+  # GeoJson
+  flutter_map_geojson: ^1.0.8
+
+  # Loading
+  skeletonizer: ^1.3.0
+
+  # Map
+  flutter_map_animations: ^0.7.0
+  flutter_map: ^7.0.1
+  latlong2: ^0.9.1
+
+  # cached image
+  cached_network_image: ^3.3.1
+
+  # intl for date time
+  intl: ^0.18.1
+
+  # State Management
+  flutter_bloc: ^8.1.6
+
+  # Google Fonts
+  google_fonts: ^6.2.0
+
+  # Dependency Injection
+  get_it: ^7.7.0
+
+  # Either return
+  dartz: ^0.10.1
+
+  # Build Runner
+  built_value: ^8.9.2
+  built_collection: ^5.1.1
+
+  # API Calls
+  chopper: ^8.0.0
+  http: ^1.2.1
+
+  # Connection
+  connectivity_plus: ^6.0.3
+
+  # FlushBar
+  another_flushbar: ^1.12.30
+
+  # Equations for objects
+  equatable: ^2.0.5
+
+  # Localization
+  easy_localization: ^3.0.7
+
+  # Local Database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.3
+
+  # Notifications
+  flutter_local_notifications: ^17.1.2
+
+  # Youtube Videos
+  youtube_player_flutter: ^9.0.1
+
+  # Firebase
+  firebase_messaging: ^15.0.1
+  firebase_auth: ^5.1.0
+  cloud_firestore: ^5.0.1
+  firebase_core: ^3.1.0
+
+  # Assets
+  flutter_svg: ^2.0.10+1
+
+  # Calendar
+  table_calendar: ^3.0.7
+
+  # HUD
+  modal_progress_hud_nsn: ^0.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.9
+  json_serializable: ^6.8.0
+  built_value_generator: ^8.9.2
+  chopper_generator: ^8.0.0
+
+  flutter_lints: ^3.0.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/nemea_app_logo.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/translations/
+    - assets/fonts/
+    - assets/icons/
+    - assets/images/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

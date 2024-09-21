@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "320450194519",
+    "project_id": "nemea-crisis",
+    "storage_bucket": "nemea-crisis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320450194519:android:ee55c2bb61265c87b80712",
+        "android_client_info": {
+          "package_name": "com.example.nemea"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBywxLaRyus8y5k53cmQZjA_DlKJBSHYUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
