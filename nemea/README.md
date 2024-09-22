@@ -2,7 +2,7 @@
 
 ## Change Api Key and URLS
 
-you
+go through the `config_dev.dart` and `config_prod.dart` files to change the urls/apis
 
 ## Flavors
 
