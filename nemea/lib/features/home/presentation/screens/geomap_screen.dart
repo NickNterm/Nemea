@@ -24,6 +24,7 @@ class _GeomapScreenState extends State<GeomapScreen>
   String? area;
   String? description;
   int? capacity;
+  bool hasmarker = false;
 
   late AnimatedMapController controller;
 
@@ -85,16 +86,19 @@ class _GeomapScreenState extends State<GeomapScreen>
 
         // Move to user location and add marker
         controller.animateTo(dest: userLocation, zoom: 14.3);
-        myGeoJson.markers.add(
-          Marker(
-            point: userLocation,
-            child: const Icon(
-              Icons.location_on,
-              color: Colors.red,
-              size: 40,
+        if (!hasmarker)
+          myGeoJson.markers.add(
+            Marker(
+              point: userLocation,
+              alignment: Alignment.topCenter,
+              child: const Icon(
+                Icons.location_on,
+                color: Colors.red,
+                size: 40,
+              ),
             ),
-          ),
-        );
+          );
+        hasmarker = true;
         setState(() {});
       }
     } catch (e) {
