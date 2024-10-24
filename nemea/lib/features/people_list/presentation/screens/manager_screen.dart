@@ -1,11 +1,9 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nemea/core/dependency_injection.dart';
 import 'package:nemea/core/widgets/custom_app_bar.dart';
 import 'package:nemea/features/home/presentation/bloc/manager/manager_bloc.dart';
 import 'package:nemea/utils/extensions/context.dart';
-import 'package:nemea/utils/locale_keys.g.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ManagerScreen extends StatefulWidget {

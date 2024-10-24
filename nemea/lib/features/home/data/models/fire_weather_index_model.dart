@@ -1,6 +1,5 @@
 library fire_weather_index_model;
 
-import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
@@ -17,8 +16,8 @@ abstract class FireWeatherIndexModel
   static Serializer<FireWeatherIndexModel> get serializer =>
       _$fireWeatherIndexModelSerializer;
 
-  //@BuiltValueField(wireName: 'list')
-  //BuiltList<FireWeatherIndex> get list;
+//@BuiltValueField(wireName: 'list')
+//BuiltList<FireWeatherIndex> get list;
 }
 //{
 //  "coord": {

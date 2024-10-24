@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:nemea/core/dependency_injection.dart';
 import 'package:nemea/core/widgets/custom_app_bar.dart';
-import 'package:nemea/features/home/presentation/screens/geomap_screen.dart';
 import 'package:nemea/features/people_list/presentation/bloc/user/user_bloc.dart';
 import 'package:nemea/features/people_list/presentation/screens/geomap_many_screen.dart';
 import 'package:nemea/utils/assets.dart';

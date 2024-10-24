@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:dartz/dartz.dart';
-import 'package:nemea/core/errors/exceptions.dart';
 import 'package:nemea/core/errors/failures.dart';
 import 'package:nemea/core/network/network_info.dart';
 import 'package:nemea/features/warnings/data/local_data/warning_local_data.dart';

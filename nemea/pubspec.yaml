@@ -23,6 +23,7 @@ dependencies:
 
   # GeoJson
   flutter_map_geojson: ^1.0.8
+  geolocator: ^9.0.0
 
   # Loading
   skeletonizer: ^1.3.0
@@ -36,7 +37,7 @@ dependencies:
   cached_network_image: ^3.3.1
 
   # intl for date time
-  intl: ^0.18.1
+  intl: ^0.19.0
 
   # State Management
   flutter_bloc: ^8.1.6
@@ -120,7 +121,6 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/translations/
-    - assets/fonts/
     - assets/icons/
     - assets/images/
 

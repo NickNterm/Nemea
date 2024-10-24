@@ -27,7 +27,6 @@ import 'package:nemea/features/warnings/domain/repositories/warning_repository.d
 import 'package:nemea/features/warnings/presentation/bloc/warnings/warnings_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../app_config.dart';
 import 'lang/language_cubit.dart';
 import 'lang/language_local_data_source.dart';
 import 'network/network_info.dart';
