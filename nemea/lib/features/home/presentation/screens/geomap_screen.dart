@@ -117,7 +117,9 @@ class _GeomapScreenState extends State<GeomapScreen>
           FlutterMap(
             mapController: controller.mapController,
             options: MapOptions(
-              interactionOptions: InteractionOptions(),
+              interactionOptions: InteractionOptions(
+                flags: InteractiveFlag.drag | InteractiveFlag.pinchZoom,
+              ),
               initialCenter: LatLng(37.8209242, 22.6596406),
               initialZoom: 14.3,
             ),
