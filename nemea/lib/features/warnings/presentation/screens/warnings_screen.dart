@@ -63,26 +63,7 @@ class _WarningsScreenState extends State<WarningsScreen> {
                   itemBuilder: (context, index) {
                     Warning warning = warnings[index];
                     return GestureDetector(
-                      onTap: () async {
-                        await setupFlutterNotifications();
-                        flutterLocalNotificationsPlugin.show(
-                          Random().nextInt(100),
-                          "test",
-                          "asaaa",
-                          NotificationDetails(
-                            android: AndroidNotificationDetails(
-                              "0",
-                              "Announcement",
-                              //channelDescription: channel.description,
-                              // TODO add a proper drawable resource to android, for now using
-                              //      one that already exists in example app.
-
-                              icon: '@drawable/launch_background',
-                            ),
-                          ),
-                          payload: 'data',
-                        );
-                      },
+                      onTap: () async {},
                       child: WarningTile(
                         warning: warning,
                       ),
