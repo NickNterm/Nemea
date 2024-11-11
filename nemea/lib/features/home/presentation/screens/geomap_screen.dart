@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_animations/flutter_map_animations.dart';
@@ -9,6 +10,7 @@ import 'package:geolocator/geolocator.dart';
 import 'package:nemea/app_config.dart';
 import 'package:nemea/core/widgets/custom_app_bar.dart';
 import 'package:nemea/utils/extensions/context.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class GeomapScreen extends StatefulWidget {
   const GeomapScreen({super.key});
@@ -24,6 +26,7 @@ class _GeomapScreenState extends State<GeomapScreen>
   String? area;
   String? description;
   int? capacity;
+  LatLng myPoint = LatLng(0, 0);
   bool hasmarker = false;
 
   late AnimatedMapController controller;
@@ -74,6 +77,44 @@ class _GeomapScreenState extends State<GeomapScreen>
     setState(() {});
   }
 
+  double calculateDistance(lat1, lon1, lat2, lon2) {
+    var p = 0.017453292519943295;
+    var c = cos;
+    var a = 0.5 -
+        c((lat2 - lat1) * p) / 2 +
+        c(lat1 * p) * c(lat2 * p) * (1 - c((lon2 - lon1) * p)) / 2;
+    return 12742 * asin(sqrt(a));
+  }
+
+  Future<void> _travelToNearSpot() async {
+    LatLng closestPoint = myGeoJson.markers.first.point;
+    double shortDistance = calculateDistance(
+      myPoint.latitude,
+      myPoint.longitude,
+      closestPoint.latitude,
+      closestPoint.longitude,
+    );
+    for (var marker in myGeoJson.markers) {
+      if (marker.point != myPoint &&
+          calculateDistance(
+                myPoint.latitude,
+                myPoint.longitude,
+                marker.point.latitude,
+                marker.point.longitude,
+              ) <=
+              shortDistance) {
+        closestPoint = marker.point;
+      }
+    }
+    String googleUrl =
+        'https://www.google.com/maps/search/?api=1&query=${closestPoint.latitude},${closestPoint.longitude}';
+    if (await canLaunchUrl(Uri.parse(googleUrl))) {
+      await launchUrl(Uri.parse(googleUrl));
+    } else {
+      throw 'Could not open the map.';
+    }
+  }
+
   Future<void> _getCurrentLocation() async {
     try {
       // Request permission
@@ -98,6 +139,7 @@ class _GeomapScreenState extends State<GeomapScreen>
               ),
             ),
           );
+        myPoint = userLocation;
         hasmarker = true;
         setState(() {});
       }
@@ -183,6 +225,25 @@ class _GeomapScreenState extends State<GeomapScreen>
               ),
             ),
           ),
+          Visibility(
+            visible: hasmarker,
+            child: Positioned(
+              top: 130,
+              right: 10,
+              child: GestureDetector(
+                onTap: _travelToNearSpot, // Call the location function
+                child: Container(
+                  width: 30,
+                  height: 30,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                  child: const Icon(Icons.map), // User location icon
+                ),
+              ),
+            ),
+          ),
           Positioned(
             right: 16,
             left: 16,
@@ -198,11 +259,18 @@ class _GeomapScreenState extends State<GeomapScreen>
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Περιοχή: $area', style: context.textStyles.body1),
-                    Text('Περιγραφή: $description',
-                        style: context.textStyles.body1),
-                    Text('Χωρητικότητα: $capacity',
-                        style: context.textStyles.body1),
+                    Text(
+                      'Περιοχή: $area',
+                      style: context.textStyles.body1,
+                    ),
+                    Text(
+                      'Περιγραφή: $description',
+                      style: context.textStyles.body1,
+                    ),
+                    Text(
+                      'Χωρητικότητα: $capacity',
+                      style: context.textStyles.body1,
+                    ),
                   ],
                 ),
               ),

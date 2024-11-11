@@ -28,6 +28,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   var scaffoldKey = GlobalKey<ScaffoldState>();
+
   @override
   void initState() {
     super.initState();
@@ -143,6 +144,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   enabled: state is MeteoLoading,
                   child: ListView.builder(
                     primary: false,
+                    padding: EdgeInsets.zero,
                     itemCount: meteos.length,
                     shrinkWrap: true,
                     itemBuilder: (context, index) {
